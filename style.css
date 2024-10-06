@@ -365,7 +365,7 @@ span {
 
 .services {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/testim.jpg);
+    url(testim.jpg);
   background-position: center;
   background-size: cover;
   margin-top: var(--m-big);
