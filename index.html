@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- GOOGLE FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SLIDER LIBRARY -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- AOS LIBRARY -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- FONT AWESOME (Single Import) -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SkyLine Suites</title>
+  </head>
+  <body>
+    <!-- HEADER TOP -->
+    <div class="header__top container">
+      <div class="header__info contact">
+        <i class="fa-solid fa-phone-office icon"></i>
+        <p class="p_text">+234 816 7509 299, +234 704 9437 110</p>
+      </div>
+      <div class="header__info search__input">
+        <input type="text" class="search" placeholder="Search..." />
+        <a href="#" class="search__icon">
+          <i class="fa-regular fa-magnifying-glass"></i>
+        </a>
+      </div>
+      <div class="header__info">
+        <a href="#acc" class="btn btn-link">Book A Room</a>
+      </div>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="header__main container">
+      <div class="logo__img">
+        <h1 class="logo">SkyLine</h1>
+      </div>
+      <div class="navbar__toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <nav class="navbar">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#acc" class="nav__link"> Accomodations </a>
+            <!-- <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <ul class="dropdown__menu">
+              <li class="nav__item"><a href="#" class="nav__link">Rooms</a></li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Suites</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Amenities</a>
+              </li>
+            </ul> -->
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- HOME PAGE -->
+    <main>
+      <section class="showcase">
+        <div class="showcase__fade ">
+          <div class="showcase__slide ">
+            <img
+              src="images/home-1.jpg"
+              alt="Photo 3"
+              class="showcase__image"
+            />
+            <div class="showcase__content container">
+              <h1 class="heading-primary">A Grand Entrance Awaits You!</h1>
+              <p class="p_text dark">
+                Walk into a world of refined elegance where modern design meets
+                timeless luxury. The stunning lobby of Skyline Suites is more
+                than an introduction—it’s the beginning of an exceptional
+                experience crafted just for you.
+              </p>
+            </div>
+          </div>
+          <div class="showcase__slide">
+            <img
+              src="images/home-2.jpg"
+              alt="Photo 3"
+              class="showcase__image"
+            />
+            <div class="showcase__content container">
+              <h1 class="heading-primary">Experience Skyline Suites</h1>
+              <p class="p_text dark">
+                Skyline Suites is your perfect sanctuary. Immerse yourself in a
+                world of luxury, impeccable service, and the best the city has
+                to offer, all from the comfort of your spacious, thoughtfully
+                designed suite.
+              </p>
+            </div>
+          </div>
+          <div class="showcase__slide">
+            <img
+              src="images/home-3.jpg"
+              alt="Photo 3"
+              class="showcase__image"
+            />
+            <div class="showcase__content container">
+              <h1 class="heading-primary">
+                Elevate Your Escape at Skyline Suites
+              </h1>
+              <p class="p_text dark">
+                Immerse yourself in serenity as you lounge by the rooftop pool.
+                With panoramic views stretching beyond the horizon, Skyline
+                Suites takes relaxation to new heights—literally.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking__section container">
+        <form action="#" class="book-form">
+          <div class="booking__field">
+            <label for="check-in">Check In</label>
+            <input type="date" id="check-in" required />
+          </div>
+          <div class="booking__field">
+            <label for="check-out">Check Out</label>
+            <input type="date" id="check-out" required />
+          </div>
+          <div class="booking__field">
+            <label for="adults">Adults</label>
+            <select id="adults">
+              <option value="1">1</option>
+              <option value="1">2</option>
+              <option value="1">3</option>
+            </select>
+          </div>
+          <div class="booking__field">
+            <label for="children">Children</label>
+            <select id="children">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="2">3</option>
+            </select>
+          </div>
+          <a href="#" class="btn btn-link">Check Availability</a>
+        </form>
+      </section>
+
+      <!-- ABOUT PAGE -->
+
+      <section class="about container" id="about">
+        <div
+          class="about__header"
+          data-aos="fade-right"
+          data-aos-duration="500"
+        >
+          <h5 class="heading-small">About Us</h5>
+          <p class="p_text dark">
+            Explore Our Accommodations. We are Ready to Welcome You
+          </p>
+        </div>
+        <div class="about__details">
+          <img
+            src="./images/about.jpg"
+            alt="Hotel View"
+            class="about__image"
+            data-aos="fade-up-right"
+            data-aos-duration="1000"
+          />
+          <div
+            class="about__description"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h3 class="heading-secondary">
+              SkyLine Suites - Your Home Above the City
+            </h3>
+            <p class="text dark small">
+              At Skyline Suites, we offer more than just a place to stay—we
+              provide a home away from home, perched above the vibrant energy of
+              the city. Our goal is to create a space where comfort, luxury, and
+              a sense of belonging meet in perfect harmony. <br /><br />
+              Each of our thoughtfully designed suites offers sweeping views of
+              the skyline, providing a peaceful retreat from the hustle and
+              bustle below. From the moment you step into our elegant lobby to
+              the time you relax by our rooftop pool, you’ll experience a level
+              of comfort and hospitality that feels warm and inviting.
+            </p>
+            <a href="#" class="btn btn-white">Read More &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES PAGE  -->
+      <section class="services container" id="services">
+        <div
+          class="services__header"
+          data-aos="fade-right"
+          data-aos-duration="500"
+        >
+          <h5 class="heading-small">Our Services</h5>
+          <p class="p_text light">
+            Skyline Suites offers exceptional services for your comfort
+          </p>
+        </div>
+        <div class="services__grid">
+          <div
+            class="service__item"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          >
+            <i class="fa-solid fa-spa"></i>
+            <h5 class="heading-medium">Spa & Wellness Center</h5>
+            <p class="text dark small">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              asperiores distinctio consectetur ea saepe voluptatibus, aut nam
+              ducimus recusandae sit.
+            </p>
+          </div>
+          <div
+            class="service__item"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          >
+            <i class="fa-light fa-wifi"></i>
+            <h5 class="heading-medium">24-Hour High-Speed Wi-Fi</h5>
+            <p class="text dark small">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
+              provident neque dolor cupiditate doloribus harum vitae, voluptatum
+              sed quam! Repellat.
+            </p>
+          </div>
+          <div
+            class="service__item"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          >
+            <i class="fa-solid fa-bell-concierge"></i>
+            <h5 class="heading-medium">24-Hour Concierge Service</h5>
+            <p class="text dark small">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Temporibus atque saepe, reiciendis est accusamus esse consectetur
+              quod maxime minima voluptas!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACCOMODATION PAGE -->
+
+      <section class="section__acc container" id="acc">
+        <div class="acc__header">
+          <h5 class="heading-small">Accomodations</h5>
+          <p class="p_text">
+            Explore Our Accommodations We are Ready to Welcome You
+          </p>
+        </div>
+        <div class="acc__rows autoplay">
+          <div class="room">
+            <img src="./images/acc-1 .jpg" alt="Room 1" class="card__image" />
+            <div class="room__content">
+              <h4 class="heading-medium room_name">Classic Room</h4>
+              <div class="room__detail">
+                <i class="fa-solid fa-people"></i>
+                <p class="p_text small">2 Guests</p>
+              </div>
+              <div class="room__detail">
+                <i class="fa-solid fa-bed-front"></i>
+                <p class="p_text small">1 King Size Bed</p>
+              </div>
+              <div class="room__detail">
+                <i class="fa-solid fa-circle-dollar"></i>
+                <p class="p_text small room_price">$1,500/Per night</p>
+              </div>
+              <br />
+
+              <p class="p_text small">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
+                quod necessitatibus architecto repellat laudantium culpa alias
+                nisi tenetur expedita quae?
+              </p>
+              <br />
+              <a href="#" class="btn btn-book">Book Now &gt;</a>
+            </div>
+          </div>
+          <div class="room">
+            <img src="./images/acc-2.jpg" alt="Room 1" class="card__image" />
+            <div class="room__content">
+              <h4 class="heading-medium room_name">Executive Luxury Suites</h4>
+              <div class="room__detail">
+                <i class="fa-solid fa-people"></i>
+                <p class="p_text small">3 Guests</p>
+              </div>
+              <div class="room__detail">
+                <i class="fa-solid fa-bed-front"></i>
+                <p class="p_text small">2 King Sized Beds</p>
+              </div>
+              <div class="room__detail">
+                <i class="fa-solid fa-circle-dollar"></i>
+                <p class="p_text small room_price">$2,500/Per night</p>
+              </div>
+              <br />
+              <p class="p_text small">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
+                quod necessitatibus architecto repellat laudantium culpa alias
+                nisi tenetur expedita quae?
+              </p>
+              <br />
+              <a href="#" class="btn btn-book">Book Now &gt;</a>
+            </div>
+          </div>
+          <div class="room">
+            <img src="./images/acc-3.jpg" alt="Room 1" class="card__image" />
+            <div class="room__content">
+              <h4 class="heading-medium room_name">Standard Room</h4>
+              <div class="room__detail">
+                <i class="fa-solid fa-people"></i>
+                <p class="p_text small">2 Guests</p>
+              </div>
+              <div class="room__detail">
+                <i class="fa-solid fa-bed-front"></i>
+                <p class="p_text small">1 King Size Bed</p>
+              </div>
+              <div class="room__detail">
+                <i class="fa-solid fa-circle-dollar"></i>
+                <p class="p_text small room_price">$1,000/Per night</p>
+              </div>
+              <br />
+              <p class="p_text small">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
+                quod necessitatibus architecto repellat laudantium culpa alias
+                nisi tenetur expedita quae?
+              </p>
+              <br />
+              <a href="#" class="btn btn-book">Book Now &gt;</a>
+            </div>
+          </div>
+          <div class="room">
+            <img src="./images/acc-4.jpg" alt="Room 1" class="card__image" />
+            <div class="room__content">
+              <h4 class="heading-medium room_name">Deluxe Luxury Room</h4>
+              <div class="room__detail">
+                <i class="fa-solid fa-people"></i>
+                <p class="p_text small">2 Guests</p>
+              </div>
+              <div class="room__detail">
+                <i class="fa-solid fa-bed-front"></i>
+                <p class="p_text small">1 King Size Bed</p>
+              </div>
+              <div class="room__detail">
+                <i class="fa-solid fa-circle-dollar"></i>
+                <p class="p_text small room_price">$2,000/Per night</p>
+              </div>
+              <br />
+              <p class="p_text small">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
+                quod necessitatibus architecto repellat laudantium culpa alias
+                nisi tenetur expedita quae?
+              </p>
+              <br />
+              <a href="#" class="btn btn-book">Book Now &gt;</a>
+            </div>
+          </div>
+          <div class="room">
+            <img src="./images/acc-5.jpg" alt="Room 1" class="card__image" />
+            <div class="room__content">
+              <h4 class="heading-medium room_name">Deluxe Suite</h4>
+              <div class="room__detail">
+                <i class="fa-solid fa-people"></i>
+                <p class="p_text small">2 Guests</p>
+              </div>
+              <div class="room__detail">
+                <i class="fa-solid fa-bed-front"></i>
+                <p class="p_text small">1 King Size Bed</p>
+              </div>
+              <div class="room__detail">
+                <i class="fa-solid fa-circle-dollar"></i>
+                <p class="p_text small room_price">$1,000/Per night</p>
+              </div>
+              <br />
+              <p class="p_text small">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
+                quod necessitatibus architecto repellat laudantium culpa alias
+                nisi tenetur expedita quae?
+              </p>
+              <br />
+              <a href="#" class="btn btn-book">Book Now &gt;</a>
+            </div>
+          </div>
+          <div class="room">
+            <img src="./images/acc-6.jpg" alt="Room 1" class="card__image" />
+            <div class="room__content">
+              <h4 class="heading-medium room_name">Standard Room</h4>
+              <div class="room__detail">
+                <i class="fa-solid fa-people"></i>
+                <p class="p_text small">2 Guests</p>
+              </div>
+              <div class="room__detail">
+                <i class="fa-solid fa-bed-front"></i>
+                <p class="p_text small">1 King Size Bed</p>
+              </div>
+              <div class="room__detail">
+                <i class="fa-solid fa-circle-dollar"></i>
+                <p class="p_text small room_price">$1,500/Per night</p>
+              </div>
+              <br />
+              <p class="p_text small">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
+                quod necessitatibus architecto repellat laudantium culpa alias
+                nisi tenetur expedita quae?
+              </p>
+              <br />
+              <a href="#" class="btn btn-book">Book Now &gt;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT FORM SECTION -->
+      <section class="section__contact container" id="contact">
+        <div class="contact__header">
+          <h5 class="heading-small">Contact Us</h5>
+          <p class="p_text">For more information kindly send us a message!</p>
+        </div>
+
+        <div class="contact__form">
+          <div class="contact__form-left">
+            <img
+              src="./images/home-2.jpg"
+              alt="Room Image"
+              class="contact__room-image"
+            />
+          </div>
+          <form action="#">
+            <div class="contact__form-right">
+              <input
+                type="text"
+                class="contact__input"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                class="contact__input"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="text"
+                class="contact__input"
+                placeholder="Phone"
+                required
+              />
+              <textarea
+                placeholder="Message"
+                class="contact__input"
+                required
+              ></textarea>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer container">
+      <div class="footer__row">
+        <div class="footer__detail">
+          <h1 class="heading-primary light">About Us</h1>
+          <p class="p_text light small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            nam odit perspiciatis repudiandae tempora magni sed, cumque placeat
+            praesentium explicabo at ut veniam eaque delectus!
+          </p>
+        </div>
+
+        <div class="footer__detail">
+          <h1 class="heading-primary light">Subscribe</h1>
+          <form action="#">
+            <input
+              type="email"
+              placeholder="Enter email address"
+              class="footer__input"
+              required
+            />
+            <button>Subscribe</button>
+          </form>
+        </div>
+
+        <div class="footer__detail">
+          <h1 class="heading-primary light">Follow Us</h1>
+          <div class="socio__links">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <p class="p_text light copy">Developed by Code Diva &copy;2024</p>
+
+    <!-- SLICK SLIDER LIBRARY -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.min.js"
+    ></script>
+
+    <!-- AOS LIBRARY -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
