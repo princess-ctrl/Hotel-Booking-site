@@ -367,7 +367,7 @@ span {
 
 .services {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../images/testim.jpg);
+    url(testim.jpg);
   background-position: center;
   background-size: cover;
   margin-top: var(--m-big);
@@ -392,7 +392,7 @@ span {
 
 .section__booking {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../images/acc-2.jpg);
+    url(acc-2.jpg);
   background-position: center;
   background-size: cover;
   height: 120vh;
