@@ -232,8 +232,8 @@ body {
 .slick-dots {
   position: absolute;
   top: 95%;
-  left: 50%;
-  transform: translate(-95%, -50%);
+  left: 55%;
+  transform: translate(-95%, -55%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -506,12 +506,13 @@ span {
 .btn-book {
   border: 1px solid #7a7a7a;
   margin-top: var(--m-small);
+  color: var(primary-color-light);
   transition: all 0.2s;
 }
 
 .btn-book:hover {
   border: none;
-  color: #BB4D00;
+  color: var(primary-color-dark);
 }
 
 .slick-prev,
